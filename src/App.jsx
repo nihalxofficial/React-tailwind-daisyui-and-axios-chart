@@ -5,8 +5,6 @@ import Navbar from './components/Navbar/Navbar'
 import Pricing from './components/Pricing/Pricing'
 
 const pricingPromise = fetch("./PricingData.json").then(res => res.json())
-console.log(pricingPromise);
-
 
 function App() {
 
@@ -17,9 +15,9 @@ function App() {
         <MyNav></MyNav>
       </header>
 
-      <main>
+      <main className="my-20">
         <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-          <Pricing></Pricing>
+          <Pricing pricingPromise={pricingPromise}></Pricing>
         </Suspense>
 
       </main>
