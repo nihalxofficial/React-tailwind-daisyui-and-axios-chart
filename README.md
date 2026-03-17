@@ -3,7 +3,8 @@
 - TailwindCss
 - Daisy Ui
 - Lucid Icon
-- Axios Js Chart
+- Rechart js
+- Axios js
 
 
 
